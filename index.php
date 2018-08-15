@@ -2,7 +2,7 @@
 
 include 'vendor/autoload.php';
 
-$messageBird = new \MessageBird\Client('J62dzFmRiFQDrJFAC9uSZLii0');
+$messageBird = new \MessageBird\Client('');
 $notificationService = new \App\Service\NotificationService($messageBird);
 
 if (isset($_SERVER['SERVER_PROTOCOL'])) {
