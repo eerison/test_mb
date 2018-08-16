@@ -13,6 +13,12 @@ add your access_key in **index.php**
 new \MessageBird\Client('your access key');
 ```
 
+start your web server
+
+```
+php -S localhost:8000
+```
+
 execute command line to send the sms
 ```php
 php index.php

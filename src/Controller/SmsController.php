@@ -12,7 +12,7 @@ class SmsController
             $number = $_POST['number'];
             $message = $_POST['message'];
             $notificationService->addListSms($number, $message);
-            HttpResponse::json('test');
+            HttpResponse::json('Your message will send.');
         } catch (\Exception $exception) {
             HttpResponse::json('Internal server error.', 500);
         }
